@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi calculadora</title>
+
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2e7d32">
+</head>
+
+<body>
+
+    <main class="contenedor">
+
+        <section class="calculadora">
+
+            <div class="encabezado">
+                <div class="icono">＋</div>
+
+                <h1>Mi calculadora</h1>
+
+                <p>Realiza operaciones de manera sencilla</p>
+            </div>
+
+            <div class="formulario">
+
+                <label for="numero1">Primer número</label>
+                <input 
+                    type="number" 
+                    id="numero1" 
+                    placeholder="Escribe el primer número"
+                >
+
+                <label for="numero2">Segundo número</label>
+                <input 
+                    type="number" 
+                    id="numero2" 
+                    placeholder="Escribe el segundo número"
+                >
+
+                <div class="botones">
+
+                    <button class="sumar" onclick="sumar()">
+                        Sumar
+                    </button>
+
+                    <button class="restar" onclick="restar()">
+                        Restar
+                    </button>
+
+                    <button class="multiplicar" onclick="multiplicar()">
+                        Multiplicar
+                    </button>
+
+                    <button class="dividir" onclick="dividir()">
+                        Dividir
+                    </button>
+
+                </div>
+
+                <h2 id="resultado">Resultado: 0</h2>
+
+                <button class="limpiar" onclick="limpiar()">
+                    Limpiar
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
